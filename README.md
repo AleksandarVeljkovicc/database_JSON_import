@@ -12,15 +12,15 @@ This approach is scalable, secure, and ideal for scenarios where you receive str
 
 Before running this application, make sure your MySQL database contains the following tables with the appropriate relationships:
 
-products: Stores core product information like name, category, brand, stock status, etc.
+- products: Stores core product information like name, category, brand, stock status, etc.
 
-prices: Stores pricing information per product, including currency label and symbol.
+- prices: Stores pricing information per product, including currency label and symbol.
 
-gallery: Stores product image URLs associated by product ID.
+- gallery: Stores product image URLs associated by product ID.
 
-attributes: Defines attribute types (e.g. color, size) per product.
+- attributes: Defines attribute types (e.g. color, size) per product.
 
-attribute_values: Stores values for each attribute (e.g. red, XL).
+- attribute_values: Stores values for each attribute (e.g. red, XL).
 
 Each table is related by product_id, ensuring normalized and relational storage.
 
